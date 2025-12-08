@@ -1,12 +1,12 @@
-# IntegrityGigs 🚀
+# IntegrityWorks 🚀
 
 ### **The Trusted Marketplace for Elite Developers & Serious Clients.**
 
-Tired of the freelance chaos? IntegrityGigs is a curated platform that eliminates scams, low-quality projects, and unreliable talent. We ensure a fair, transparent, and professional environment where **skilled developers** find meaningful work and **serious clients** get exceptional results.
+Tired of the freelance chaos? IntegrityWorks is a curated platform that eliminates scams, low-quality projects, and unreliable talent. We ensure a fair, transparent, and professional environment where **skilled developers** find meaningful work and **serious clients** get exceptional results.
 
 ---
 
-## ✨ Why IntegrityGigs?
+## ✨ Why IntegrityWorks?
 
 ### For Developers: Code with Confidence.
 
@@ -51,7 +51,7 @@ We leverage a modern, scalable, and secure technology stack to ensure a premium 
 
 1.  **Sign Up:** Create your developer profile to showcase your skills and portfolio.
 2.  **Get Verified:** Our team reviews your profile to ensure quality standards.
-3.  **Browse Gigs:** Explore vetted projects that match your expertise.
+3.  **Browse Works:** Explore vetted projects that match your expertise.
 4.  **Submit Proposals:** Connect with clients who value your work.
 5.  **Get Paid Securely:** Work through protected milestones and receive timely payments.
 
@@ -67,7 +67,7 @@ We leverage a modern, scalable, and secure technology stack to ensure a premium 
 ## 📞 Contact & Support
 
 - **Questions?** Check out our [FAQ](link-to-faq) page.
-- **Need Help?** Reach out to our support team at [support@integritygigs.com](mailto:support@integritygigs.com).
+- **Need Help?** Reach out to our support team at [support@integrityWorks.com](mailto:support@integrityWorks.com).
 - **Want to Collaborate?** We're open to contributions! Please read our [Contributing Guidelines](link-to-contributing-md) first.
 
 ---
@@ -80,7 +80,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 🤝 Why We Built This
 
-The freelance world is broken. IntegrityGigs is our mission to fix it—one successful project at a time.
+The freelance world is broken. IntegrityWorks is our mission to fix it—one successful project at a time.
 
 **Ready to experience better freelancing?**
 [Join as a Developer](#) | [Join as a Client](#)
