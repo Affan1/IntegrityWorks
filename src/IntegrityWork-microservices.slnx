@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="BuildingBlocks/BuildingBlocks.csproj" Id="65a45e07-2961-4f03-bc03-04446eeb5d59" />
+  </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/Jobs/" />
+</Solution>
