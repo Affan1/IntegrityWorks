@@ -3,5 +3,9 @@
     <Project Path="BuildingBlocks/BuildingBlocks.csproj" Id="65a45e07-2961-4f03-bc03-04446eeb5d59" />
   </Folder>
   <Folder Name="/Services/" />
-  <Folder Name="/Services/Jobs/" />
+  <Folder Name="/Services/Jobs/">
+    <Project Path="Services/Jobs/JobService.API/JobService.API.csproj" />
+  </Folder>
+  <Project Path="IntegrityAspire/IntegrityAspire.AppHost/IntegrityAspire.AppHost.csproj" Id="6bb98517-2e8e-4e69-951b-9af4cc850839" />
+  <Project Path="IntegrityAspire/IntegrityAspire.ServiceDefaults/IntegrityAspire.ServiceDefaults.csproj" />
 </Solution>
