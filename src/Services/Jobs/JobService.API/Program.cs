@@ -11,6 +11,15 @@ builder.Services.AddDbContext<JobsDbContext>(options =>
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
 
+// Add services to the container.
+var assembly = typeof(Program).Assembly;
+builder.Services.AddMediatR(config =>
+{
+    config.RegisterServicesFromAssembly(assembly);
+});
+builder.Services.AddCarter();
+
+
 var app = builder.Build();
 
 // Apply migrations automatically
@@ -19,5 +28,6 @@ using (var scope = app.Services.CreateScope())
     var db = scope.ServiceProvider.GetRequiredService<JobsDbContext>();
     db.Database.Migrate();
 }
+app.MapCarter();
 
 app.Run();
