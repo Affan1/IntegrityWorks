@@ -21,7 +21,7 @@ public class GetJobByIdEndpoint : ICarterModule
             return Results.Ok(response);
         })
             .Produces<GetJobResponse>(StatusCodes.Status200OK)
-            .Produces(StatusCodes.Status400BadRequest)
+            .ProducesProblem(StatusCodes.Status400BadRequest)
             .WithName("Get Job By ID")
             .WithDescription("Get Job By ID")
             .WithTags("GetJobID");

@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.AspNetCore.Mvc;
+
 namespace JobService.API.Services.CreateJobs;
 
 public record CreateJobRequest(
@@ -48,7 +50,7 @@ public class CreateJobsEndpoint : ICarterModule
 
             var response = result.Adapt<CreateJobResponse>();
 
-            return Results.Created($"/products/{response.Id}", response);
+            return Results.Created($"/jobs/{response.Id}", response);
         })
         .Produces<CreateJobResult>(StatusCodes.Status201Created)
         .Produces(StatusCodes.Status400BadRequest)

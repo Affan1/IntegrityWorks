@@ -1,0 +1,9 @@
+services:
+  jobsdb:
+    image: postgres
+
+  jobservice.api:
+    image: ${DOCKER_REGISTRY-}jobserviceapi
+    build:
+      context: .
+      dockerfile: Services/Jobs/JobService.API/Dockerfile

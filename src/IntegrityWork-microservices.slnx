@@ -6,6 +6,12 @@
   <Folder Name="/Services/Jobs/">
     <Project Path="Services/Jobs/JobService.API/JobService.API.csproj" />
   </Folder>
+  <Folder Name="/Services/Users/">
+    <Project Path="Services/Users/UserService.API/UserService.API.csproj" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
   <Project Path="IntegrityAspire/IntegrityAspire.AppHost/IntegrityAspire.AppHost.csproj" Id="6bb98517-2e8e-4e69-951b-9af4cc850839" />
   <Project Path="IntegrityAspire/IntegrityAspire.ServiceDefaults/IntegrityAspire.ServiceDefaults.csproj" />
 </Solution>

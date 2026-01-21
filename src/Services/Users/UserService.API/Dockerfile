@@ -12,21 +12,19 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Services/Jobs/JobService.API/JobService.API.csproj", "Services/Jobs/JobService.API/"]
-COPY ["BuildingBlocks/BuildingBlocks.csproj", "BuildingBlocks/"]
-COPY ["IntegrityAspire/IntegrityAspire.ServiceDefaults/IntegrityAspire.ServiceDefaults.csproj", "IntegrityAspire/IntegrityAspire.ServiceDefaults/"]
-RUN dotnet restore "./Services/Jobs/JobService.API/JobService.API.csproj"
+COPY ["Services/Users/UserService.API/UserService.API.csproj", "Services/Users/UserService.API/"]
+RUN dotnet restore "./Services/Users/UserService.API/UserService.API.csproj"
 COPY . .
-WORKDIR "/src/Services/Jobs/JobService.API"
-RUN dotnet build "./JobService.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Services/Users/UserService.API"
+RUN dotnet build "./UserService.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./JobService.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./UserService.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "JobService.API.dll"]
+ENTRYPOINT ["dotnet", "UserService.API.dll"]

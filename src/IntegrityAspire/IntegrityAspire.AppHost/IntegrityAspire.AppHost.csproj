@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Sdk Name="Aspire.AppHost.Sdk" Version="13.0.2" />
 
@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\BuildingBlocks\BuildingBlocks.csproj" />
     <ProjectReference Include="..\..\Services\Jobs\JobService.API\JobService.API.csproj" />
+    <ProjectReference Include="..\..\Services\Users\UserService.API\UserService.API.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="@(Content)">

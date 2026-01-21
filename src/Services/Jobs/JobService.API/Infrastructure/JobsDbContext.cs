@@ -1,4 +1,5 @@
 ﻿using JobService.API.Domains.Models;
+using JobService.API.Infrastructure.Configuration;
 using Microsoft.EntityFrameworkCore;
 
 namespace JobService.API.Infrastructure;
@@ -16,6 +17,8 @@ public class JobsDbContext : DbContext
     public DbSet<JobBookmark> JobApplications => Set<JobBookmark>();
     public DbSet<JobView> JobViews => Set<JobView>();
     public DbSet<JobStatusHistory> JobStatusHistories => Set<JobStatusHistory>();
+    public DbSet<Category> Categories => Set<Category>();
+    public DbSet<Skill> Skills => Set<Skill>(); 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

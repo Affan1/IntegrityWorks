@@ -15,4 +15,6 @@ builder.AddProject<Projects.JobService_API>("jobservice-api")
     .WithReference(jobsDb)
     .WaitFor(jobsDb);
 
+builder.AddProject<Projects.UserService_API>("userservice-api");
+
 builder.Build().Run();
